@@ -18,5 +18,7 @@ function divide(num, num2) {
 }
 
 function operate(operator, num, num2) {
-    operator(num, num2);
+    console.log(operator(num, num2));
 };
+
+operate(add, 2, 2);
