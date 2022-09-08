@@ -29,6 +29,7 @@ const display = document.querySelector('#display');
 numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
         console.log(button.textContent);
+        console.log(display.textContent)
         display.textContent += button.textContent
     });
 });
