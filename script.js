@@ -24,4 +24,11 @@ function operate(operator, num, num2) {
 operate(divide, 2, -2);
 
 const numberButtons = document.querySelectorAll('.digit');
+const display = document.querySelector('#display');
 
+numberButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        console.log(button.textContent);
+        display.textContent += button.textContent
+    });
+});
