@@ -21,4 +21,7 @@ function operate(operator, num, num2) {
     console.log(operator(num, num2));
 };
 
-operate(add, 2, 2);
+operate(divide, 2, -2);
+
+const numberButtons = document.querySelectorAll('.digit');
+
