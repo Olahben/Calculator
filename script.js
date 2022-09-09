@@ -29,12 +29,13 @@ const display = document.querySelector('#display');
 const operators = document.querySelectorAll('.operator')
 let currentOperator = undefined;
 //console.log(operators)
+console.log(currentOperator)
 
 const updateCurrentOperator = operators.forEach((button) => {
     button.addEventListener('click', () => {
-        if(currentOperator !== undefined) {
+        /*if(typeof currentOperator !== 'undefined') {
             console.log('An operator is already chosen');
-        }
+        }*/
 
         if(button.textContent === '+') {
             currentOperator = '+';
@@ -50,11 +51,17 @@ const updateCurrentOperator = operators.forEach((button) => {
 
 numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
+        /*if(typeof currentOperator == 'undefined') {
+            display.textContent += button.textContent;
+        } else {
+            console.log('An operator has already been chosen')
+        }*/
+        display.textContent += button.textContent;
         //console.log(button.textContent);
         //console.log(display.textContent)
-        display.textContent += button.textContent
     });
 });
+
 
 
 
