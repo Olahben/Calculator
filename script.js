@@ -28,8 +28,21 @@ const display = document.querySelector('#display');
 
 const operators = document.querySelectorAll('.operator')
 let currentOperator = '';
+//console.log(operators)
 
-
+const updateCurrentOperator = operators.forEach((button) => {
+    button.addEventListener('click', () => {
+        if(button.textContent === '+') {
+            currentOperator = '+';
+        } else if(button.textContent === '-') {
+            currentOperator = '-';
+        } else if(button.textContent === '*') {
+            currentOperator = '*';
+        } else if(button.textContent === '/') {
+            currentOperator = '/';
+        }
+    });
+});
 
 numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
