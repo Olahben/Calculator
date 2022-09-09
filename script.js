@@ -27,11 +27,15 @@ const numberButtons = document.querySelectorAll('.show');
 const display = document.querySelector('#display');
 
 const operators = document.querySelectorAll('.operator')
-let currentOperator = '';
+let currentOperator = undefined;
 //console.log(operators)
 
 const updateCurrentOperator = operators.forEach((button) => {
     button.addEventListener('click', () => {
+        if(currentOperator !== undefined) {
+            console.log('An operator is already chosen');
+        }
+
         if(button.textContent === '+') {
             currentOperator = '+';
         } else if(button.textContent === '-') {
@@ -46,15 +50,6 @@ const updateCurrentOperator = operators.forEach((button) => {
 
 numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
-        if(button.textContent === '+') {
-            currentOperator = '+';
-        } else if(button.textContent === '-') {
-            currentOperator = '-';
-        } else if(button.textContent === '*') {
-            currentOperator = '*';
-        } else if(button.textContent === '/') {
-            currentOperator = '/';
-        }
         //console.log(button.textContent);
         //console.log(display.textContent)
         display.textContent += button.textContent
