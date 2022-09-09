@@ -23,13 +23,31 @@ function operate(operator, num, num2) {
 
 operate(divide, 2, -2);
 
-const numberButtons = document.querySelectorAll('.digit');
+const numberButtons = document.querySelectorAll('.show');
 const display = document.querySelector('#display');
+
+const operators = document.querySelectorAll('.operator')
+let currentOperator = '';
+
+
 
 numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
-        console.log(button.textContent);
-        console.log(display.textContent)
+        if(button.textContent === '+') {
+            currentOperator = '+';
+        } else if(button.textContent === '-') {
+            currentOperator = '-';
+        } else if(button.textContent === '*') {
+            currentOperator = '*';
+        } else if(button.textContent === '/') {
+            currentOperator = '/';
+        }
+        //console.log(button.textContent);
+        //console.log(display.textContent)
         display.textContent += button.textContent
     });
 });
+
+
+
+
