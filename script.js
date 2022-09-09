@@ -29,7 +29,7 @@ const display = document.querySelector('#display');
 const operators = document.querySelectorAll('.operator')
 let currentOperator = undefined;
 //console.log(operators)
-console.log(currentOperator)
+//console.log(currentOperator)
 
 const updateCurrentOperator = operators.forEach((button) => {
     button.addEventListener('click', () => {
