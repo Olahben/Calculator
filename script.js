@@ -44,6 +44,8 @@ numberButtons.forEach((button) => {
         //console.log(display.textContent)
     });
 });
+let firstNum = undefined;
+let secondNum = undefined;
 
 const updateCurrentOperator = operators.forEach((button) => {
     button.addEventListener('click', () => {
@@ -56,23 +58,20 @@ const updateCurrentOperator = operators.forEach((button) => {
         } else if(button.textContent === '/') {
             currentOperator = '/';
         } 
+
+
         /*if(typeof currentOperator !== 'undefined') {
             console.log('An operator is already chosen');
         }*/
     });
 });
 
-let firstNum = undefined;
-let secondNum = undefined;
-
-const saveFirstNum = operators.forEach((button) => {
+/*const saveFirstNum = operators.forEach((button) => {
     button.addEventListener('click', () => {
         firstNum = display.textContent;
         display.textContent = undefined;
     });
-});
-
-
+});*/
 
 
 
