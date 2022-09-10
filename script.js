@@ -26,6 +26,8 @@ operate(divide, 2, -2);
 const numberButtons = document.querySelectorAll('.show');
 const display = document.querySelector('#display');
 
+let operation = undefined;
+
 const operators = document.querySelectorAll('.operator')
 let currentOperator = undefined;
 //console.log(operators)
@@ -66,12 +68,11 @@ const updateCurrentOperator = operators.forEach((button) => {
     });
 });
 
-/*const saveFirstNum = operators.forEach((button) => {
+const saveOperation = operators.forEach((button) => {
     button.addEventListener('click', () => {
-        firstNum = display.textContent;
-        display.textContent = undefined;
+        operation
     });
-});*/
+});
 
 
 
