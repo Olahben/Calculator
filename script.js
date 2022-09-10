@@ -74,6 +74,10 @@ const saveOperation = operators.forEach((button) => {
     });
 });
 
+const equals = document.querySelector('.equals');
+
+
+
 
 
 
