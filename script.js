@@ -64,7 +64,12 @@ const updateCurrentOperator = operators.forEach((button) => {
 
 let firstNum = undefined;
 
-
+const saveFirstNum = operators.forEach((button) => {
+    button.addEventListener('click', () => {
+        firstNum = display.textContent;
+        display.textContent = undefined;
+    });
+});
 
 
 
