@@ -70,7 +70,7 @@ const updateCurrentOperator = operators.forEach((button) => {
 
 const saveOperation = operators.forEach((button) => {
     button.addEventListener('click', () => {
-        operation
+        operation = display.textContent
     });
 });
 
