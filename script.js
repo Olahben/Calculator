@@ -62,6 +62,10 @@ const updateCurrentOperator = operators.forEach((button) => {
     });
 });
 
+let firstNum = undefined;
+
+
+
 
 
 
