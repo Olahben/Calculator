@@ -63,6 +63,7 @@ const updateCurrentOperator = operators.forEach((button) => {
 });
 
 let firstNum = undefined;
+let secondNum = undefined;
 
 const saveFirstNum = operators.forEach((button) => {
     button.addEventListener('click', () => {
@@ -70,6 +71,11 @@ const saveFirstNum = operators.forEach((button) => {
         display.textContent = undefined;
     });
 });
+
+
+
+
+
 
 
 
