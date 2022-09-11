@@ -31,6 +31,7 @@ const equals = document.querySelector('.equals');
 const operators = document.querySelectorAll('.operator')
 //console.log(operators)
 
+let currentOperation;
 let firstNumber;
 let secondNumber;
 
@@ -50,13 +51,13 @@ const getFirstNumber = operators.forEach((button) => {
 
 const saveOperation = operators.forEach((operator) => {
     operator.addEventListener('click', () => {
-        const currentOperation = operator.textContent;
+         currentOperation = operator.textContent;
         display.textContent = undefined;
     });
 });
 
 const getSecondNumber = equals.addEventListener('click', () => {
-    
+    secondNumber = displayValue;
 });
 
 
