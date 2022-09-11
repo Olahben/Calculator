@@ -47,7 +47,11 @@ const getFirstNumber = operators.forEach((button) => {
 });
 
 
-
+const saveOperation = operators.forEach((operator) => {
+    operator.addEventListener('click', () => {
+        
+    });
+});
 
 
 
