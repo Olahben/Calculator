@@ -18,10 +18,10 @@ function divide(num, num2) {
 }
 
 function operate(operator, num, num2) {
-    console.log(operator(num, num2));
+    display.textContent = operator(num, num2);
 };
 
-operate(divide, 2, -2);
+//operate(divide, 2, -2);
 
 const numberButtons = document.querySelectorAll('.show');
 const display = document.querySelector('#display');
@@ -61,7 +61,7 @@ const getSecondNumber = equals.addEventListener('click', () => {
     secondNumber = displayValue;
     display.textContent = undefined;
 
-    operate(+currentOperation, +firstNumber, +secondNumber);
+    operate(currentOperation, +firstNumber, +secondNumber);
 });
 
 
