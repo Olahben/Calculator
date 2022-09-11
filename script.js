@@ -29,7 +29,7 @@ const display = document.querySelector('#display');
 const equals = document.querySelector('.equals');
 const operators = document.querySelectorAll('.operator')
 //console.log(operators)
-//console.log(currentOperator)
+
 
 
 
