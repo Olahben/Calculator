@@ -41,7 +41,7 @@ const addNumbers = numberButtons.forEach((button) => {
 
 const getFirstNumber = operators.forEach((button) => {
     button.addEventListener('click', () => {
-
+        firstNumber = displayValue;
     });
 });
 
