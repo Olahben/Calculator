@@ -53,6 +53,10 @@ const saveOperation = operators.forEach((operator) => {
     });
 });
 
+const getSecondNumber = equals.addEventListener('click', () => {
+    
+});
+
 
 
 
