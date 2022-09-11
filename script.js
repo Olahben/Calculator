@@ -60,6 +60,8 @@ const getSecondNumber = equals.addEventListener('click', () => {
     displayValue = display.textContent;
     secondNumber = displayValue;
     display.textContent = undefined;
+
+    operate(+currentOperation, +firstNumber, +secondNumber);
 });
 
 
