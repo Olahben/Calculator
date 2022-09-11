@@ -50,6 +50,7 @@ const getFirstNumber = operators.forEach((button) => {
 const saveOperation = operators.forEach((operator) => {
     operator.addEventListener('click', () => {
         const currentOperation = operator.textContent;
+        display.textContent = undefined;
     });
 });
 
