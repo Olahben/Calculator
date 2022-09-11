@@ -25,7 +25,7 @@ operate(divide, 2, -2);
 
 const numberButtons = document.querySelectorAll('.show');
 const display = document.querySelector('#display');
-const displayValue = display.textContent;
+let displayValue = display.textContent;
 
 const equals = document.querySelector('.equals');
 const operators = document.querySelectorAll('.operator')
