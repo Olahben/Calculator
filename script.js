@@ -31,6 +31,12 @@ const equals = document.querySelector('.equals');
 const operators = document.querySelectorAll('.operator')
 //console.log(operators)
 
+const addNumbers = numberButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        display.textContent += button.textContent;
+    });
+});
+
 
 
 
