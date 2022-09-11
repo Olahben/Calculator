@@ -51,7 +51,15 @@ const getFirstNumber = operators.forEach((button) => {
 
 const saveOperation = operators.forEach((operator) => {
     operator.addEventListener('click', () => {
-         currentOperation = operator.textContent;
+        if(operator.textContent === '+') {
+            currentOperation = add;
+        } else if(operator.textContent === '-') {
+            currentOperation = subtract;
+        } else if(operator.textContent === '*') {
+            currentOperation = multiply;
+        } else if(operator.textContent === '/') {
+            currentOperation = divide;
+        }
         display.textContent = undefined;
     });
 });
@@ -61,6 +69,7 @@ const getSecondNumber = equals.addEventListener('click', () => {
     secondNumber = displayValue;
     display.textContent = undefined;
 
+    //console.log(currentOperation);
     operate(currentOperation, +firstNumber, +secondNumber);
 });
 
