@@ -25,7 +25,7 @@ operate(divide, 2, -2);
 
 const numberButtons = document.querySelectorAll('.show');
 const display = document.querySelector('#display');
-
+const equals = document.querySelector('.equals');
 let operation = undefined;
 
 const operators = document.querySelectorAll('.operator')
@@ -46,8 +46,7 @@ numberButtons.forEach((button) => {
         //console.log(display.textContent)
     });
 });
-let firstNum = undefined;
-let secondNum = undefined;
+
 
 const updateCurrentOperator = operators.forEach((button) => {
     button.addEventListener('click', () => {
@@ -71,12 +70,14 @@ const updateCurrentOperator = operators.forEach((button) => {
 const saveOperation = operators.forEach((button) => {
     button.addEventListener('click', () => {
         operation = display.textContent
+        
     });
 });
 
-const equals = document.querySelector('.equals');
 
-
+const saveOperation2 = equals.addEventListener('click' , () => {
+    operation = display.textContent;
+});
 
 
 
