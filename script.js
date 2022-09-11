@@ -33,51 +33,7 @@ let currentOperator = undefined;
 //console.log(operators)
 //console.log(currentOperator)
 
-numberButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-        display.textContent += button.textContent;
-        /*if(typeof currentOperator == 'undefined') {
-            display.textContent += button.textContent;
-        } else {
-            console.log('An operator has already been chosen')
-        }*/
-        
-        //console.log(button.textContent);
-        //console.log(display.textContent)
-    });
-});
 
-
-const updateCurrentOperator = operators.forEach((button) => {
-    button.addEventListener('click', () => {
-        if(button.textContent === '+') {
-            currentOperator = '+';
-        } else if(button.textContent === '-') {
-            currentOperator = '-';
-        } else if(button.textContent === '*') {
-            currentOperator = '*';
-        } else if(button.textContent === '/') {
-            currentOperator = '/';
-        } 
-
-
-        /*if(typeof currentOperator !== 'undefined') {
-            console.log('An operator is already chosen');
-        }*/
-    });
-});
-
-const saveOperation = operators.forEach((button) => {
-    button.addEventListener('click', () => {
-        operation = display.textContent
-        
-    });
-});
-
-
-const saveOperation2 = equals.addEventListener('click' , () => {
-    operation = display.textContent;
-});
 
 
 
