@@ -73,6 +73,8 @@ const getSecondNumber = equals.addEventListener('click', () => {
     operate(currentOperation, +firstNumber, +secondNumber);
 });
 
+const clear = document.querySelector('.clear');
+
 
 
 
