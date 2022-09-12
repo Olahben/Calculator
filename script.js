@@ -85,6 +85,17 @@ const clearCalculator = clear.addEventListener('click', () => {
      operatorClicks = 0;
 });
 
+const checkOperatorClicks = operators.forEach((operator) => {
+    operator.addEventListener('click', () => {
+        if(operatorClicks >= 1) {
+            console.log(currentOperation, firstNumber, secondNumber);
+            operate(currentOperation, +firstNumber, +secondNumber);
+        } else {
+            operatorClicks++;
+        }
+    });
+});
+
 
 
 
