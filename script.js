@@ -35,6 +35,8 @@ let currentOperation;
 let firstNumber;
 let secondNumber;
 
+let operatorClicks = 0;
+
 const addNumbers = numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
         display.textContent += button.textContent;
@@ -80,7 +82,14 @@ const clearCalculator = clear.addEventListener('click', () => {
      firstNumber;
      secondNumber;
      display.textContent = undefined;
+     operatorClicks = 0;
 });
+
+
+
+
+
+
 
 
 
