@@ -1,3 +1,5 @@
+let result = 0;
+
 function add(num, num2) {
     return num + num2;
 }
