@@ -37,6 +37,18 @@ let secondNumber;
 
 let operatorClicks = 0;
 
+const checkOperatorClicks = operators.forEach((operator) => {
+    operator.addEventListener('click', () => {
+        if(operatorClicks >= 1) {
+            secondNumber = display.textContent
+            console.log(firstNumber, secondNumber);
+            operate(currentOperation, +firstNumber, +secondNumber);
+            
+        }
+        operatorClicks++;
+    });
+});
+
 const addNumbers = numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
         display.textContent += button.textContent;
@@ -45,6 +57,9 @@ const addNumbers = numberButtons.forEach((button) => {
 
 const getFirstNumber = operators.forEach((button) => {
     button.addEventListener('click', () => {
+        if(operatorClicks >= 1) {
+            return 1; 
+        }
         displayValue = display.textContent;
         firstNumber = displayValue;
     });
@@ -53,6 +68,7 @@ const getFirstNumber = operators.forEach((button) => {
 
 const saveOperation = operators.forEach((operator) => {
     operator.addEventListener('click', () => {
+
         if(operator.textContent === '+') {
             currentOperation = add;
         } else if(operator.textContent === '-') {
@@ -85,16 +101,7 @@ const clearCalculator = clear.addEventListener('click', () => {
      operatorClicks = 0;
 });
 
-const checkOperatorClicks = operators.forEach((operator) => {
-    operator.addEventListener('click', () => {
-        if(operatorClicks >= 1) {
-            console.log(currentOperation, firstNumber, secondNumber);
-            operate(currentOperation, +firstNumber, +secondNumber);
-        } else {
-            operatorClicks++;
-        }
-    });
-});
+
 
 
 
