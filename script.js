@@ -18,7 +18,8 @@ function divide(num, num2) {
 }
 
 function operate(operator, num, num2) {
-    display.textContent = operator(num, num2);
+    display.textContent += operator(num, num2);
+    console.log(operator(num, num2));
 };
 
 //operate(divide, 2, -2);
@@ -51,6 +52,7 @@ const checkOperatorClicks = operators.forEach((operator) => {
     operator.addEventListener('click', () => {
         if(operatorClicks >= 1) {
             secondNumber = display.textContent
+            console.log(currentOperation)
             console.log(firstNumber, secondNumber);
             operate(currentOperation, +firstNumber, +secondNumber);
             
@@ -90,6 +92,7 @@ const getSecondNumber = equals.addEventListener('click', () => {
     display.textContent = undefined;
 
     //console.log(currentOperation);
+    //console.log(+firstNumber, +secondNumber);
     operate(currentOperation, +firstNumber, +secondNumber);
 });
 
