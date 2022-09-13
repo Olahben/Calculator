@@ -82,7 +82,9 @@ const saveOperation = operators.forEach((operator) => {
         } else if(operator.textContent === '/') {
             currentOperation = divide;
         }
-        display.textContent = undefined;
+        if(operatorClicks <= 1) {
+            display.textContent = undefined;
+        }
     });
 });
 
