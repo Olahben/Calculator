@@ -54,6 +54,7 @@ const checkOperatorClicks = operators.forEach((operator) => {
             secondNumber = display.textContent
             console.log(currentOperation)
             console.log(firstNumber, secondNumber);
+            display.textContent = undefined;
             operate(currentOperation, +firstNumber, +secondNumber);
             
         }
