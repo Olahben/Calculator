@@ -22,7 +22,7 @@ function divide(num, num2) {
 function operate(operator, num, num2) {
     display.textContent += operator(num, num2);
     console.log(operator(num, num2));
-    result++;
+    result = display.textContent;
 };
 
 //operate(divide, 2, -2);
@@ -67,7 +67,7 @@ const checkOperatorClicks = operators.forEach((operator) => {
 
 const addNumbers = numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
-        if(result == 1) {
+        if(result == display.textContent) {
             display.textContent = undefined
         }
         display.textContent += button.textContent;
