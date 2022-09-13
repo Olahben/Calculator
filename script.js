@@ -58,7 +58,7 @@ const checkOperatorClicks = operators.forEach((operator) => {
             console.log(firstNumber, secondNumber);
             display.textContent = undefined;
             operate(currentOperation, +firstNumber, +secondNumber);
-            
+            result++;
         }
         operatorClicks++;
     });
@@ -66,6 +66,7 @@ const checkOperatorClicks = operators.forEach((operator) => {
 
 const addNumbers = numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
+
         display.textContent += button.textContent;
     });
 });
@@ -99,6 +100,7 @@ const getSecondNumber = equals.addEventListener('click', () => {
     //console.log(currentOperation);
     //console.log(+firstNumber, +secondNumber);
     operate(currentOperation, +firstNumber, +secondNumber);
+    result++;
 });
 
 const clear = document.querySelector('.clear');
