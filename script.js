@@ -67,7 +67,9 @@ const checkOperatorClicks = operators.forEach((operator) => {
 
 const addNumbers = numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
-
+        if(result == 1) {
+            display.textContent = undefined
+        }
         display.textContent += button.textContent;
     });
 });
@@ -111,6 +113,7 @@ const clearCalculator = clear.addEventListener('click', () => {
      secondNumber;
      display.textContent = undefined;
      operatorClicks = 0;
+     result = 0;
 });
 
 
