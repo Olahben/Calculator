@@ -50,7 +50,7 @@ const getFirstNumber = operators.forEach((button) => {
 
 const checkOperatorClicks = operators.forEach((operator) => {
     operator.addEventListener('click', () => {
-        if(operatorClicks >= 1) {
+        if(operatorClicks % 2) {
             secondNumber = display.textContent
             console.log(currentOperation)
             console.log(firstNumber, secondNumber);
