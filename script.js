@@ -72,8 +72,12 @@ const addNumbers = numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
         if(result == display.textContent) {
             display.textContent = undefined
+        } else if(result == firstNumber) {
+            secondNumber = button.textContent
+            display.textContent += button.textContent;
+        } else {
+            display.textContent += button.textContent;
         }
-        display.textContent += button.textContent;
     });
 });
 
