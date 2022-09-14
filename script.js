@@ -5,7 +5,7 @@ let secondNumber;
 
 let operatorClicks = 0;
 
-let displayValue = display.textContent;
+
 
 
 const numberButtons = document.querySelectorAll('.show');
@@ -121,7 +121,7 @@ const clearCalculator = clear.addEventListener('click', () => {
 
 
 
-
+let displayValue = display.textContent;
 
 
 
