@@ -11,3 +11,9 @@ button {
     margin: 6px;
     padding: 4px;
 }
+
+.clear {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+}
