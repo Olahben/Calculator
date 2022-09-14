@@ -1,4 +1,17 @@
 let result = 0;
+let currentOperation;
+let firstNumber;
+let secondNumber;
+
+let operatorClicks = 0;
+
+let displayValue = display.textContent;
+
+
+const numberButtons = document.querySelectorAll('.show');
+const display = document.querySelector('#display');
+const equals = document.querySelector('.equals');
+const operators = document.querySelectorAll('.operator')
 
 function add(num, num2) {
     return num + num2;
@@ -27,22 +40,6 @@ function operate(operator, num, num2) {
         firstNumber = result;
     }
 };
-
-//operate(divide, 2, -2);
-
-const numberButtons = document.querySelectorAll('.show');
-const display = document.querySelector('#display');
-let displayValue = display.textContent;
-
-const equals = document.querySelector('.equals');
-const operators = document.querySelectorAll('.operator')
-//console.log(operators)
-
-let currentOperation;
-let firstNumber;
-let secondNumber;
-
-let operatorClicks = 0;
 
 const getFirstNumber = operators.forEach((button) => {
     button.addEventListener('click', () => {
