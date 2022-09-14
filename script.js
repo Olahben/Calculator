@@ -23,6 +23,9 @@ function operate(operator, num, num2) {
     display.textContent += operator(num, num2);
     console.log(operator(num, num2));
     result = display.textContent;
+    if(result !== 0) {
+        firstNumber = result;
+    }
 };
 
 //operate(divide, 2, -2);
