@@ -2,3 +2,12 @@
     border: 10px black solid;
     
 }
+
+button {
+    background-color: rgb(67, 202, 255);
+    color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 4px;
+    margin: 6px;
+    padding: 4px;
+}
