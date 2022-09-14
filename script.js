@@ -47,7 +47,7 @@ let operatorClicks = 0;
 const getFirstNumber = operators.forEach((button) => {
     button.addEventListener('click', () => {
         if(operatorClicks >= 1) {
-            return 1; 
+            return 1; // stops function
         }
         displayValue = display.textContent;
         firstNumber = displayValue;
