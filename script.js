@@ -105,8 +105,6 @@ const getSecondNumber = equals.addEventListener('click', () => {
     secondNumber = displayValue;
     display.textContent = undefined;
 
-    //console.log(currentOperation);
-    //console.log(+firstNumber, +secondNumber);
     operate(currentOperation, +firstNumber, +secondNumber);
 });
 
