@@ -27,6 +27,8 @@ button {
 .button-container {
     width: 290px;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 #display {
