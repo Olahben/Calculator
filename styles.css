@@ -21,6 +21,7 @@ button {
     display: block;
     font-size: 18px;
     font-weight: 800;
+    margin: auto;
 }
 
 .button-container {
