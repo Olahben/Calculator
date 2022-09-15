@@ -1,5 +1,8 @@
 #calculator {
     border: 10px black solid;
+    background-color: rgb(195, 255, 255);
+    display: flex;
+    justify-content: center;
     
 }
 
