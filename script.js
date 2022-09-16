@@ -101,6 +101,7 @@ const saveOperation = operators.forEach((operator) => {
         }
     });
 });
+let displayValue = display.textContent;
 
 const getSecondNumber = equals.addEventListener('click', () => {
     displayValue = display.textContent;
@@ -113,9 +114,9 @@ const getSecondNumber = equals.addEventListener('click', () => {
 const clear = document.querySelector('.clear');
 
 const clearCalculator = clear.addEventListener('click', () => {
-     currentOperation;
-     firstNumber;
-     secondNumber;
+     currentOperation = undefined;
+     firstNumber = undefined;
+     secondNumber = undefined;
      display.textContent = undefined;
      operatorClicks = 0;
      result = 0;
@@ -123,7 +124,7 @@ const clearCalculator = clear.addEventListener('click', () => {
 
 
 
-let displayValue = display.textContent;
+
 
 const addKeyboardSupport = window.addEventListener('keydown', (e) => {
     if(typeof +e.key === 'number') {
