@@ -72,14 +72,15 @@ const addNumbers = numberButtons.forEach((button) => {
         if(result == display.textContent) {
             display.textContent = undefined
         } 
-
-        if(display.textContent.length == 22) {
-            displayMessage.textContent = "ERROR"
-        } else if(result == firstNumber) {
+         if(result == firstNumber) {
             secondNumber = button.textContent
             display.textContent += button.textContent;
         } else {
             display.textContent += button.textContent;
+        }
+
+        if(display.textContent.length == 22) {
+            displayMessage.textContent = "ERROR"
         }
     });
 });
