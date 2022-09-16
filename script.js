@@ -131,6 +131,9 @@ const clearCalculator = clear.addEventListener('click', () => {
 
 
 const addKeyboardSupport = window.addEventListener('keydown', (e) => {
+    if(result == display.textContent) {
+        display.textContent = undefined;
+    } 
     if(typeof +e.key === 'number') {
         display.textContent += e.key;
     }
