@@ -43,11 +43,12 @@ function operate(operator, num, num2) {
 
 const getFirstNumber = operators.forEach((button) => {
     button.addEventListener('click', () => {
-        if(operatorClicks > 1) {
+        if(operatorClicks >= 1) {
+            console.log('correct')
             return 1; // stops function
         }
-        displayValue = display.textContent;
-        firstNumber = displayValue;
+            displayValue = display.textContent;
+            firstNumber = displayValue;
     });
 });
 
@@ -56,6 +57,7 @@ const checkOperatorClicks = operators.forEach((operator) => {
         if(operatorClicks >= 1) {
             secondNumber = display.textContent
             console.log(currentOperation)
+            console.log(result);
             console.log(firstNumber, secondNumber);
             display.textContent = undefined;
             operate(currentOperation, +firstNumber, +secondNumber);
