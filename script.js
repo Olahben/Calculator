@@ -65,11 +65,17 @@ const checkOperatorClicks = operators.forEach((operator) => {
     });
 });
 
+const displayMessage = document.querySelector('.display-message')
+
 const addNumbers = numberButtons.forEach((button) => {
     button.addEventListener('click', () => {
         if(result == display.textContent) {
             display.textContent = undefined
         } 
+
+        
+            
+        }
         if(result == firstNumber) {
             secondNumber = button.textContent
             display.textContent += button.textContent;
