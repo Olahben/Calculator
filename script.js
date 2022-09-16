@@ -73,10 +73,9 @@ const addNumbers = numberButtons.forEach((button) => {
             display.textContent = undefined
         } 
 
-        
-            
-        }
-        if(result == firstNumber) {
+        if(display.textContent.length == 22) {
+            displayMessage.textContent = "ERROR"
+        } else if(result == firstNumber) {
             secondNumber = button.textContent
             display.textContent += button.textContent;
         } else {
