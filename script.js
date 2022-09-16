@@ -78,10 +78,6 @@ const addNumbers = numberButtons.forEach((button) => {
         } else {
             display.textContent += button.textContent;
         }
-
-        if(display.textContent.length == 22) {
-            displayMessage.textContent = "ERROR"
-        }
     });
 });
 
