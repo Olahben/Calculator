@@ -43,7 +43,7 @@ function operate(operator, num, num2) {
 
 const getFirstNumber = operators.forEach((button) => {
     button.addEventListener('click', () => {
-        if(operatorClicks >= 1) {
+        if(operatorClicks > 1) {
             return 1; // stops function
         }
         displayValue = display.textContent;
@@ -53,7 +53,7 @@ const getFirstNumber = operators.forEach((button) => {
 
 const checkOperatorClicks = operators.forEach((operator) => {
     operator.addEventListener('click', () => {
-        if(operatorClicks % 2) {
+        if(operatorClicks >= 1) {
             secondNumber = display.textContent
             console.log(currentOperation)
             console.log(firstNumber, secondNumber);
