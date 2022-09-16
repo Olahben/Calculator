@@ -129,7 +129,9 @@ const clearCalculator = clear.addEventListener('click', () => {
 
 let displayValue = display.textContent;
 
-
+window.addEventListener('keydown', (e) => {
+    
+});
 
 
 
