@@ -4,7 +4,7 @@ let firstNumber;
 let secondNumber;
 
 let operatorClicks = 0;
-
+let floatingPoint = 0;
 
 
 
