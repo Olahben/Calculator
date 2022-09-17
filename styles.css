@@ -22,7 +22,7 @@ button {
     font-size: 18px;
     font-weight: 800;
     margin-right: auto;
-    margin-left: 110px;
+    margin-left: 114px;
 }
 
 .button-container {
@@ -50,4 +50,8 @@ body {
 
 .right-margin {
     margin-right: 0px;
+}
+
+.left-margin {
+    margin-left: 10px;
 }
