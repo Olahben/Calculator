@@ -69,3 +69,8 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.show:hover {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 10px 4px 3px rgb(139, 0, 0);
+}
