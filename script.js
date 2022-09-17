@@ -144,6 +144,7 @@ const addKeyboardSupport = window.addEventListener('keydown', (e) => {
 });
 
 
+const floatingPointBtn = document.querySelector('.floating-point');
 
 
 
