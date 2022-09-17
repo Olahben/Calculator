@@ -21,7 +21,8 @@ button {
     display: block;
     font-size: 18px;
     font-weight: 800;
-    margin: auto;
+    margin-right: auto;
+    margin-left: 110px;
 }
 
 .button-container {
@@ -45,4 +46,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.right-margin {
+    margin-right: 0px;
 }
