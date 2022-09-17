@@ -64,6 +64,7 @@ const checkOperatorClicks = operators.forEach((operator) => {
             
         }
         operatorClicks++;
+        floatingPoint = 0;
     });
 });
 
@@ -113,6 +114,7 @@ const getSecondNumber = equals.addEventListener('click', () => {
     display.textContent = undefined;
 
     operate(currentOperation, +firstNumber, +secondNumber);
+    floatingPoint = 0;
 });
 
 const clear = document.querySelector('.clear');
@@ -124,6 +126,7 @@ const clearCalculator = clear.addEventListener('click', () => {
      display.textContent = undefined;
      operatorClicks = 0;
      result = 0;
+     floatingPoint = 0;
 });
 
 
@@ -139,6 +142,8 @@ const addKeyboardSupport = window.addEventListener('keydown', (e) => {
     }
     //console.log(typeof +e.key)
 });
+
+
 
 
 
